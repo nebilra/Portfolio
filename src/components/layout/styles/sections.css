@@ -41,17 +41,36 @@
 }
 
 .projects-section {
+	@apply max-h-max h-max flex flex-col gap-8;
 }
 
 .skills-section {
 }
 
 .experience-section {
-	@apply bg-alternate max-h-max h-max;
+	@apply bg-alternate max-h-max h-max flex flex-col gap-4;
 }
 
 .contact-section {
 	@apply bg-alternate;
+}
+
+.contact-section form input {
+	@apply w-[60%] mt-4 bg-transparent border-0 border-b px-4 py-5 font-bold text-lg;
+	transition: 0.2s ease-in-out;
+}
+.contact-section form textarea {
+	@apply w-[96%] mt-4 bg-transparent border-0 border-b px-4 py-5 font-bold text-lg;
+	resize: none;
+	transition: 0.2s ease-in-out;
+}
+.contact-section form input:focus {
+	@apply border-b-4 border-b-frame dark:border-b-gray-700;
+	outline: none;
+}
+.contact-section form textarea:focus {
+	@apply border-b-4 border-b-frame dark:border-b-gray-700;
+	outline: none;
 }
 
 @keyframes blob-rotation {

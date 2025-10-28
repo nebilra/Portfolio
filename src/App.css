@@ -25,3 +25,7 @@
 	position: fixed;
 	inset: 0;
 }
+
+.btn {
+	@apply border border-frame px-3 py-1.5 rounded hover:bg-frame cursor-pointer;
+}

@@ -25,7 +25,7 @@ export const AboutSection = () => {
 				</div>
 				<div className="flex-1">
 					<img
-						src="/programming-1.png"
+						src="/images/programming-1.png"
 						alt="Programming illustration"
 						className="w-full"
 					/>

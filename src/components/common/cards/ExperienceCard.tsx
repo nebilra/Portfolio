@@ -64,7 +64,7 @@ const ExperienceCard = ({
 
 				<div className="flex gap-2 flex-wrap">
 					{stack.map((tool) => (
-						<ToolCard title={tool} bg="alt" />
+						<ToolCard title={tool} bg="alt" key={tool} />
 					))}
 				</div>
 			</div>

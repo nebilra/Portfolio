@@ -9,7 +9,11 @@ export const HeroSection = () => {
 				<h3>I build things for the web</h3>
 			</div>
 			<div className="right">
-				<img src="/headshot.png" alt="Face headshot" className="headshot" />
+				<img
+					src="/images/headshot.png"
+					alt="Face headshot"
+					className="headshot"
+				/>
 				{/* <img src={circuitPattern} className="pattern" /> */}
 				{/* <img src={blobPattern} className="pattern" /> */}
 				<div className="pattern"></div>
