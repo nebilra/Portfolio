@@ -43,24 +43,27 @@ const ExperienceCard = ({
 		duration = `${months[from.getMonth()]} - ${months[to.getMonth()]} ${to.getFullYear()}`;
 	}
 	return (
-		<div className="p-6 rounded-lg flex gap-4 max-h-96 max-w-[800px]">
+		<div className="p-6 rounded-lg flex gap-4 max-w-[800px]">
 			<div className="flex justify-start flex-2 mt-2">
-				<p className="dark:text-gray-200 text-gray-600 text-sm">{duration}</p>
+				<p className="dark:text-gray-200 text-gray-600 text-xs sm:text-sm">
+					{duration}
+				</p>
 			</div>
 			<div className="flex flex-col gap-4 flex-5">
 				<div className="flex flex-col gap-1">
 					<h4>
-						{position} . <span className="text-xl font-light">{company}</span>
+						{position} .{" "}
+						<span className="text-sm sm:text-lg md:text-xl font-light inline-block italic">
+							{company}
+						</span>
 					</h4>
 					{location && (
-						<p className="text-sm text-gray-600 dark:text-gray-200">
+						<p className="text-xs sm:text-sm text-gray-600 dark:text-gray-200">
 							{location}
 						</p>
 					)}
 				</div>
-				<p className="max-h-60 text-gray-600 dark:text-gray-300">
-					{description}
-				</p>
+				<p className="text-gray-600 dark:text-gray-300">{description}</p>
 
 				<div className="flex gap-2 flex-wrap">
 					{stack.map((tool) => (

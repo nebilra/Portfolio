@@ -8,7 +8,7 @@ export const HeroSection = () => {
 				<h1>Nebil Rahmeto</h1>
 				<h3>I build things for the web</h3>
 			</div>
-			<div className="right">
+			<div className="right sm:flex hidden items-center">
 				<img
 					src="/images/headshot.png"
 					alt="Face headshot"
@@ -16,7 +16,7 @@ export const HeroSection = () => {
 				/>
 				{/* <img src={circuitPattern} className="pattern" /> */}
 				{/* <img src={blobPattern} className="pattern" /> */}
-				<div className="pattern"></div>
+				<div className="pattern md:block hidden"></div>
 			</div>
 		</section>
 	);

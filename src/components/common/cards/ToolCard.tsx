@@ -6,8 +6,8 @@ type props = {
 
 const sizes = {
 	sm: "py-1 px-2 text-xs rounded",
-	md: "py-2 px-4 rounded-lg",
-	lg: "py-3 px-6 text-lg rounded-lg",
+	md: "py-1.5 px-3 sm:py-2 sm:px-4 rounded-lg md:text-base text-sm",
+	lg: "py-2 px-4 sm:py-3 sm:px-6 sm:text-base md:text-lg rounded-lg",
 };
 const ToolCard = ({ title, bg = "default", size = "md" }: props) => {
 	return (

@@ -1,11 +1,11 @@
 @reference "../../../index.css";
 
 .section {
-	@apply p-20 h-screen max-h-[800px];
+	@apply p-6 sm:p-12 md:p-18;
 }
 
 .hero-section {
-	@apply flex gap-2;
+	@apply flex gap-2 h-screen max-h-[800px];
 }
 
 .hero-section .left {

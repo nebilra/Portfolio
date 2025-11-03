@@ -1,7 +1,7 @@
 @reference "./index.css";
 
 .main-container {
-	@apply flex flex-col gap-2 bg-main-background pt-4;
+	@apply flex flex-col gap-2 bg-main-background pt-4 w-full;
 }
 
 .decorator {
@@ -20,7 +20,7 @@
 		0 100%,
 		8px 100%
 	);
-	clip-rule: nonzero;
+	/* clip-rule: nonzero; */
 	z-index: 49;
 	position: fixed;
 	inset: 0;

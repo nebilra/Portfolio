@@ -20,7 +20,7 @@ export const ExperienceSection = () => {
 						/>
 					))}
 				</div>
-				<div className="flex-1">
+				<div className="flex-1 md:flex hidden items-center">
 					<img src="/images/experience.png" alt="experience illustration" />
 				</div>
 			</div>

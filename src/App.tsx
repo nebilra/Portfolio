@@ -11,7 +11,7 @@ import { SkillsSection } from "./components/layout/SkillsSection";
 
 function App() {
 	return (
-		<>
+		<div className="overflow-x-hidden">
 			<Toaster />
 			<Nav />
 			<main className="main-container">
@@ -24,7 +24,7 @@ function App() {
 				<ContactSection />
 			</main>
 			<div className="decorator"></div>
-		</>
+		</div>
 	);
 }
 

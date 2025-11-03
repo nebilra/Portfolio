@@ -23,11 +23,11 @@ export const AboutSection = () => {
 						provide an enjoyable user experience
 					</p>
 				</div>
-				<div className="flex-1">
+				<div className="flex-1 md:flex hidden items-center">
 					<img
 						src="/images/programming-1.png"
 						alt="Programming illustration"
-						className="w-full"
+						className="flex-1"
 					/>
 				</div>
 			</div>

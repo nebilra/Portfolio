@@ -1,7 +1,7 @@
 @reference "../../../index.css";
 
 .nav-container {
-	@apply px-8 py-6 pl-16 flex gap-6 justify-around items-center fixed top-[6px] right-0 z-50 bg-frame border-none;
+	@apply px-4 py-2 sm:py-3 gap-4 pl-12 md:px-8 md:py-6 md:pl-16 flex md:gap-6 justify-around items-center fixed top-[6px] right-0 z-50 bg-frame border-none;
 	clip-path: polygon(0 0, 15% 100%, 100% 100%, 100% 0, 0 0);
 }
 

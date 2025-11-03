@@ -7,16 +7,16 @@ export const Nav = () => {
 		<nav className="nav-container">
 			<ul className="flex gap-8">
 				<a href="#" className="nav-link">
-					<Github />
+					<Github className="md:w-6 md:h-6 sm:w-4 sm:h-4 w-4 h-4" />
 				</a>
 				<a href="#" className="nav-link">
-					<Send />
+					<Send className="md:w-6 md:h-6 sm:w-4 sm:h-4 w-4 h-4" />
 				</a>
 				<a href="#" className="nav-link">
-					<Linkedin />
+					<Linkedin className="md:w-6 md:h-6 sm:w-4 sm:h-4 w-4 h-4" />
 				</a>
 			</ul>
-			<div className="h-6 w-0.5 bg-gray-700 dark:bg-gray-50"></div>
+			<div className="h-6 w-[1px] md:w-0.5 bg-gray-700 dark:bg-gray-50"></div>
 			<ThemeToggle />
 		</nav>
 	);
