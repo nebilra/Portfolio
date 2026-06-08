@@ -20,9 +20,6 @@ function App() {
 				<ProjectsSection />
 				<ContactSection />
 			</main>
-			{/* <div className="decorator-wrapper"> */}
-			{/* 	<div className="decorator" /> */}
-			{/* </div> */}
 		</div>
 	);
 }

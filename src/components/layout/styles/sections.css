@@ -1,12 +1,12 @@
 @reference "../../../index.css";
 
 .section {
-	@apply px-6 sm:px-12 md:px-18 py-4 sm:py-8 md:py-12;
+	@apply px-4 py-4 sm:px-12 sm:py-8 md:px-18 md:py-12;
 }
 
 /* === HERO === */
 .hero-section {
-	@apply px-6 sm:px-12 md:px-18 pt-8 md:pt-12 pb-2 md:pb-4 mt-2 md:mt-8 mb-2 md:mb-4;
+	@apply pb-2 md:pb-4 mt-2 md:mt-8 mb-2 md:mb-4;
 }
 
 .hero-inner {
@@ -31,7 +31,7 @@
 
 /* === ABOUT === */
 .about-section {
-	@apply px-6 sm:px-12 md:px-18 pb-2 md:pb-4 flex flex-col gap-3;
+	@apply flex flex-col gap-3;
 }
 
 .about-text p {

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export const HeroSection = () => {
 	return (
-		<section id="hero" className="hero-section">
+		<section id="hero" className="hero-section section">
 			<div className="hero-inner">
 				<motion.div
 					className="hero-photo"

@@ -14,7 +14,7 @@ const featuredSkills = [
 
 export const AboutSection = () => {
 	return (
-		<section id="about" className="about-section">
+		<section id="about" className="about-section section">
 			<Reveal>
 				<div className="about-text">
 					<p>
