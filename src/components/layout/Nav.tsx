@@ -14,21 +14,9 @@ export const Nav = () => {
 	return (
 		<div className="nav-wrapper">
 			<nav className="nav-container">
-				{/* <ul className="hidden md:flex gap-6 text-sm font-medium"> */}
-				{/* 	{links.map((link) => ( */}
-				{/* 		<li key={link.href}> */}
-				{/* 			<a */}
-				{/* 				href={link.href} */}
-				{/* 				className="nav-link text-xs lg:text-sm" */}
-				{/* 			> */}
-				{/* 				{link.label} */}
-				{/* 			</a> */}
-				{/* 		</li> */}
-				{/* 	))} */}
-				{/* </ul> */}
 				<ul className="flex gap-4 md:gap-6">
 					<a
-						href="https://github.com/nebil"
+						href="https://github.com/Patrix726"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="nav-icon"
@@ -39,7 +27,7 @@ export const Nav = () => {
 						<Send className="md:w-6 md:h-6 sm:w-4 sm:h-4 w-4 h-4" />
 					</a>
 					<a
-						href="https://linkedin.com/in/nebil"
+						href="https://linkedin.com/in/nebilrahmeto"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="nav-icon"
