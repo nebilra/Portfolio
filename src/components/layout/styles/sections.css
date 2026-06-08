@@ -18,7 +18,7 @@
 }
 
 .hero-photo-clip {
-	@apply w-[90px] h-[100px] md:w-[140px] md:h-[150px] overflow-hidden aspect-auto border-2 border-frame;
+	@apply w-[90px] h-[100px] md:w-[140px] md:h-[150px] overflow-hidden border-2 border-frame hidden sm:block;
 }
 
 .hero-photo-clip img {
