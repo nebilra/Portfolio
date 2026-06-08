@@ -1,16 +1,9 @@
 import { motion } from "framer-motion";
 import ToolCard from "../common/cards/ToolCard";
+import { FileText } from "../common/icons";
 import { Reveal, RevealStagger, staggerItem } from "../Reveal";
 
-const featuredSkills = [
-	"React",
-	"Node.js",
-	"TypeScript",
-	"PostgreSQL",
-	"Next.js",
-	"Tailwind",
-	"Prisma",
-];
+const featuredSkills = ["TypeScript", "React", "Next.js", "Node.js", "Express.js", "PostgreSQL"];
 
 export const AboutSection = () => {
 	return (
@@ -28,7 +21,7 @@ export const AboutSection = () => {
 			</Reveal>
 			<Reveal delay={0.15}>
 				<div className="skills-compact">
-					<h5 className="skills-label">#Skills</h5>
+					<h5 className="skills-label"># Skills</h5>
 					<RevealStagger className="skills-pills">
 						{featuredSkills.map((skill) => (
 							<motion.div key={skill} variants={staggerItem}>
@@ -37,6 +30,15 @@ export const AboutSection = () => {
 						))}
 					</RevealStagger>
 				</div>
+			</Reveal>
+			<Reveal delay={0.25}>
+				<a
+					href="https://github.com/patrix726/resume/releases/latest/download/resume.pdf"
+					download
+					className="btn inline-flex gap-2 items-center justify-center mt-4"
+				>
+					<FileText className="w-4 h-4" /> <span>Download Resume</span>
+				</a>
 			</Reveal>
 		</section>
 	);

@@ -1,3 +1,3 @@
-import { ExternalLink, Github, Linkedin, Send } from "lucide-react";
+import { ExternalLink, FileText, Github, Linkedin, Send } from "lucide-react";
 
-export { ExternalLink, Github, Linkedin, Send };
+export { ExternalLink, FileText, Github, Linkedin, Send };
