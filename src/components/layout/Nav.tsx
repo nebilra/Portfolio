@@ -47,7 +47,7 @@ export const Nav = () => {
 						<Linkedin className="md:w-6 md:h-6 sm:w-4 sm:h-4 w-4 h-4" />
 					</a>
 				</ul>
-				<div className="h-6 w-[1px] md:w-0.5 bg-gray-700 dark:bg-gray-50"></div>
+				<div className="h-6 w-[1px] md:w-0.5 bg-frame-foreground/30"></div>
 				<ThemeToggle />
 			</nav>
 		</div>

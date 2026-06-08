@@ -18,8 +18,7 @@
 }
 
 .hero-photo-clip {
-	@apply w-[90px] h-[100px] md:w-[140px] md:h-[150px] overflow-hidden aspect-auto;
-	border: 2px solid var(--color-frame);
+	@apply w-[90px] h-[100px] md:w-[140px] md:h-[150px] overflow-hidden aspect-auto border-2 border-frame;
 }
 
 .hero-photo-clip img {
@@ -56,22 +55,30 @@
 	@apply max-h-max h-max flex flex-col gap-8;
 }
 
+.project-card {
+	transition: box-shadow 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.project-card:hover {
+	box-shadow: var(--frame-shadow);
+}
+
 /* === EXPERIENCE === */
 .experience-section {
 	@apply max-h-max h-max flex flex-col gap-4;
 }
 
 /* === CONTACT === */
-.contact-section {
-}
+/* .contact-section { */
+/* } */
 
 .contact-section form input {
-	@apply w-[60%] mt-4 bg-transparent border-0 border-b px-4 py-5 font-bold text-lg;
+	@apply w-full sm:w-[60%] mt-4 bg-transparent border-0 border-b px-4 py-5 font-bold text-lg;
 	transition: 0.2s ease-in-out;
 }
 
 .contact-section form textarea {
-	@apply w-[96%] mt-4 bg-transparent border-0 border-b px-4 py-5 font-bold text-lg;
+	@apply w-full sm:w-[96%] mt-4 bg-transparent border-0 border-b px-4 py-5 font-bold text-lg;
 	resize: none;
 	transition: 0.2s ease-in-out;
 }

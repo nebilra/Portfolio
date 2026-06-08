@@ -16,15 +16,14 @@ const isGitHub = (label: string) => label.toLowerCase() === "github";
 const ProjectCard = ({ title, description, links, stack, image }: props) => {
 	return (
 		<motion.div
-			className="p-4 rounded-lg flex flex-col gap-2 break-inside-avoid-column border border-gray-700/30 dark:border-white/10 mb-4 bg-white/50 dark:bg-white/5 backdrop-blur-sm"
-			whileHover={{ y: -8, boxShadow: "0 20px 60px -12px rgba(247,105,53,0.18)" }}
+			className="p-4 flex flex-col gap-2 break-inside-avoid-column border border-frame/10 mb-4 bg-card/50 backdrop-blur-sm project-card"
+			whileHover={{ y: -8 }}
 			transition={{ duration: 0.4, ease: [0.34, 1.56, 0.64, 1] }}
 		>
 			{image && (
 				<motion.img
 					src={image}
 					alt={`${title}'s thumbnail`}
-					className="rounded-md"
 					whileHover={{ scale: 1.03 }}
 					transition={{ duration: 0.4 }}
 				/>
@@ -47,10 +46,10 @@ const ProjectCard = ({ title, description, links, stack, image }: props) => {
 							rel="noopener noreferrer"
 							whileHover={{ scale: 1.05 }}
 							whileTap={{ scale: 0.97 }}
-							className={`inline-flex items-center gap-1.5 px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
+							className={`inline-flex items-center gap-1.5 px-4 py-2 text-sm font-medium transition-colors duration-200 ${
 								github
-									? "border border-gray-400 dark:border-gray-500 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-white/10"
-									: "bg-frame text-white shadow-sm hover:brightness-110"
+									? "border border-frame/30 text-muted-foreground hover:bg-frame/10"
+									: "bg-frame text-frame-foreground shadow-sm hover:brightness-110"
 							}`}
 						>
 							{github ? <Github className="w-4 h-4" /> : <ExternalLink className="w-4 h-4" />}

@@ -22,14 +22,12 @@ const ExperienceCard = ({ company, description, from, position, stack, to, locat
 		duration = `${months[from.getMonth()]} - ${months[to.getMonth()]} ${to.getFullYear()}`;
 	}
 	return (
-		<div className="p-4 sm:p-6 rounded-lg flex flex-col sm:flex-row gap-1 sm:gap-6 max-w-[800px] relative">
+		<div className="p-4 sm:p-6 flex flex-col sm:flex-row gap-1 sm:gap-6 max-w-[800px] relative">
 			<div className="hidden sm:flex flex-col items-center mt-2">
-				<div className="w-3 h-3 rounded-full bg-frame ring-2 ring-frame/30 shrink-0"></div>
+				<div className="w-3 h-3 bg-frame ring-2 ring-frame/30 shrink-0"></div>
 			</div>
 			<div className="sm:mt-2 sm:min-w-[90px]">
-				<p className="dark:text-gray-200 text-gray-600 text-xs sm:text-sm whitespace-nowrap">
-					{duration}
-				</p>
+				<p className="text-muted-foreground text-xs sm:text-sm whitespace-nowrap">{duration}</p>
 			</div>
 			<div className="flex flex-col gap-4 flex-1">
 				<div className="flex flex-col gap-1">
@@ -39,15 +37,13 @@ const ExperienceCard = ({ company, description, from, position, stack, to, locat
 							@ {company}
 						</span>
 					</h4>
-					{location && (
-						<p className="text-xs sm:text-sm text-gray-600 dark:text-gray-200">{location}</p>
-					)}
+					{location && <p className="text-xs sm:text-sm text-muted-foreground">{location}</p>}
 				</div>
-				<p className="text-gray-600 dark:text-gray-300">{description}</p>
+				<p className="text-muted-foreground">{description}</p>
 
 				<div className="flex gap-2 flex-wrap">
 					{stack.map((tool) => (
-						<ToolCard title={tool} bg="alt" key={tool} />
+						<ToolCard title={tool} bg="alt" key={tool} size="sm" />
 					))}
 				</div>
 			</div>

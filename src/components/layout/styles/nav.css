@@ -14,12 +14,12 @@
 }
 
 .nav-link {
-	@apply text-foreground relative;
+	@apply text-frame-foreground relative;
 }
 
 .nav-link::after {
 	content: "";
-	@apply absolute -bottom-1 left-0 w-0 h-0.5 bg-foreground transition-all duration-300;
+	@apply absolute -bottom-1 left-0 w-0 h-0.5 bg-frame-foreground transition-all duration-300;
 }
 
 .nav-link:hover::after {
@@ -27,5 +27,5 @@
 }
 
 .nav-icon {
-	@apply text-foreground hover:scale-110 transition-all inline-flex;
+	@apply text-frame-foreground hover:scale-110 transition-all inline-flex;
 }

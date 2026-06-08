@@ -29,10 +29,10 @@ export const HeroSection = () => {
 						animate={{ opacity: 1, x: 0 }}
 						transition={{ duration: 0.6, delay: 0.2 }}
 					>
-						<span className="bg-gradient-to-r from-frame via-[#06b6d4] to-[#14b8a6] dark:from-[#22d3ee] dark:via-[#67e8f9] dark:to-[#5eead4] bg-clip-text text-transparent hidden sm:flex">
+						<span className="bg-gradient-to-r from-frame via-[#6c757d] to-[#adb5bd] dark:from-frame dark:via-[#ced4da] dark:to-[#dee2e6] bg-clip-text text-transparent hidden sm:flex">
 							Nebil Rahmeto
 						</span>
-						<span className="bg-gradient-to-r from-frame via-[#06b6d4] to-[#14b8a6] dark:from-[#22d3ee] dark:via-[#67e8f9] dark:to-[#5eead4] bg-clip-text text-transparent flex sm:hidden">
+						<span className="bg-gradient-to-r from-frame via-[#6c757d] to-[#adb5bd] dark:from-frame dark:via-[#ced4da] dark:to-[#dee2e6] bg-clip-text text-transparent flex sm:hidden">
 							Nebil
 						</span>
 					</motion.h1>
