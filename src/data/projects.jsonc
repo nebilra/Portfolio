@@ -37,5 +37,19 @@
 				"url": "https://github.com/nebilra/Spotlyrics"
 			}
 		]
+	},
+	{
+		"image": "/images/project-pics/yourstech.png",
+		"title": "Yourstech Academy",
+		"description": "Client project - built an eLearning platform similar to Udacity, enabling users to purchase courses. Managed database schema and backend development with contributions to the frontend, integrated Vimeo for seamless video streaming, and deployed the application to a VPS for production.",
+		"stack": ["Next.js", "Express", "MongoDB"],
+		"links": [{ "label": "Live Site", "url": "https://yourstech.academy" }]
+	},
+	{
+		"image": "/images/project-pics/academy-nest.png",
+		"title": "Academy Nest",
+		"description": "Client project - built a live eLearning platform with live virtual classrooms powered by Zoom integration. Developed scalable backend services ensuring high availability and performance, designed RESTful APIs for data exchange, and integrated live video streaming for teachers to educate students.",
+		"stack": ["Next.js", "Express.js", "Socket.io", "Prisma"],
+		"links": [{ "label": "Live Site", "url": "https://academy-nest.com" }]
 	}
 ]
