@@ -1,7 +1,6 @@
-import { motion } from "framer-motion";
 import ToolCard from "../common/cards/ToolCard";
 import { FileText } from "../common/icons";
-import { Reveal, RevealStagger, staggerItem } from "../Reveal";
+import { Reveal } from "../Reveal";
 
 const featuredSkills = ["TypeScript", "React", "Next.js", "Node.js", "Express.js", "PostgreSQL"];
 
@@ -22,13 +21,13 @@ export const AboutSection = () => {
 			<Reveal delay={0.15}>
 				<div className="skills-compact">
 					<h5 className="skills-label"># Skills</h5>
-					<RevealStagger className="skills-pills">
-						{featuredSkills.map((skill) => (
-							<motion.div key={skill} variants={staggerItem}>
+					<div className="skills-pills">
+						{featuredSkills.map((skill, i) => (
+							<Reveal key={skill} delay={i * 0.08}>
 								<ToolCard title={skill} size="sm" />
-							</motion.div>
+							</Reveal>
 						))}
-					</RevealStagger>
+					</div>
 				</div>
 			</Reveal>
 			<Reveal delay={0.25}>

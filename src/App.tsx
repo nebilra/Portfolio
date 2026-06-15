@@ -1,11 +1,19 @@
+import { lazy, Suspense } from "react";
 import { Toaster } from "react-hot-toast";
 import "./App.css";
 import { AboutSection } from "./components/layout/AboutSection";
-import { ContactSection } from "./components/layout/ContactSection";
-import { ExperienceSection } from "./components/layout/ExperienceSection";
 import { HeroSection } from "./components/layout/HeroSection";
 import { Nav } from "./components/layout/Nav";
-import { ProjectsSection } from "./components/layout/ProjectsSection";
+
+const ContactSection = lazy(() =>
+	import("./components/layout/ContactSection").then((m) => ({ default: m.ContactSection })),
+);
+const ExperienceSection = lazy(() =>
+	import("./components/layout/ExperienceSection").then((m) => ({ default: m.ExperienceSection })),
+);
+const ProjectsSection = lazy(() =>
+	import("./components/layout/ProjectsSection").then((m) => ({ default: m.ProjectsSection })),
+);
 
 function App() {
 	return (
@@ -16,9 +24,11 @@ function App() {
 			<main className="main-container">
 				<HeroSection />
 				<AboutSection />
-				<ExperienceSection />
-				<ProjectsSection />
-				<ContactSection />
+				<Suspense fallback={null}>
+					<ExperienceSection />
+					<ProjectsSection />
+					<ContactSection />
+				</Suspense>
 			</main>
 		</div>
 	);

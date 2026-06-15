@@ -1,5 +1,4 @@
 import emailjs from "@emailjs/browser";
-import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 import toast from "react-hot-toast";
 import { PUBLIC_KEY, SERVICE_ID, TEMPLATE_ID } from "@/lib/constants";
@@ -49,42 +48,27 @@ export const ContactSection = () => {
 			<Reveal>
 				<SectionHeader>Contact Me</SectionHeader>
 			</Reveal>
-			<motion.form
-				onSubmit={sendEmail}
-				ref={form}
-				className="flex flex-col gap-2"
-				initial={{ opacity: 0, y: 30 }}
-				whileInView={{ opacity: 1, y: 0 }}
-				viewport={{ once: true }}
-				transition={{ duration: 0.6, delay: 0.2 }}
-			>
-				<input type="text" name="name" placeholder="name" required />
-				<input type="email" name="email" placeholder="email" required />
-				<textarea name="message" placeholder="your message" required rows={5}></textarea>
-				<motion.button
-					className="btn max-w-24 mt-4"
-					disabled={submitting}
-					whileHover={{ scale: 1.08 }}
-					whileTap={{ scale: 0.95 }}
-				>
-					{submitting ? (
-						<span className="flex items-center gap-2">
-							<motion.span
-								className="inline-block w-4 h-4 border-2 border-current border-t-transparent"
-								animate={{ rotate: 360 }}
-								transition={{
-									duration: 0.8,
-									repeat: Infinity,
-									ease: "linear",
-								}}
-							/>
-							Sending
-						</span>
-					) : (
-						"Send"
-					)}
-				</motion.button>
-			</motion.form>
+			<Reveal delay={0.2}>
+				<form onSubmit={sendEmail} ref={form} className="flex flex-col gap-2">
+					<input type="text" name="name" placeholder="name" required />
+					<input type="email" name="email" placeholder="email" required />
+					<textarea name="message" placeholder="your message" required rows={5} />
+					<button
+						type="submit"
+						className="btn max-w-24 mt-4 transition-transform duration-200 active:scale-95 hover:scale-105"
+						disabled={submitting}
+					>
+						{submitting ? (
+							<span className="flex items-center gap-2">
+								<span className="inline-block w-4 h-4 border-2 border-current border-t-transparent animate-spin-slow" />
+								Sending
+							</span>
+						) : (
+							"Send"
+						)}
+					</button>
+				</form>
+			</Reveal>
 		</section>
 	);
 };

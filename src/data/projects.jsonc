@@ -1,6 +1,6 @@
 [
 	{
-		"image": "/images/project-pics/ridelink.png",
+		"image": "/images/project-pics/ridelink.webp",
 		"title": "RideLink Carpooling Platform",
 		"description": "A real-time carpooling platform connecting drivers and passengers for daily commutes. Features trip scheduling, route matching, and driver ratings.",
 		"stack": ["React", "Flutter", "Node.js", "Express", "Convex", "Postgres"],
@@ -10,7 +10,7 @@
 		]
 	},
 	{
-		"image": "/images/project-pics/emr.png",
+		"image": "/images/project-pics/emr.webp",
 		"title": "HealthTrack EMR System",
 		"description": "A full-stack electronic medical record platform with role-based dashboards for doctors, patients, and receptionists. Includes appointment scheduling, invoice management, and secure authentication.",
 		"stack": ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Tailwind CSS"],
@@ -26,7 +26,7 @@
 		]
 	},
 	{
-		"image": "/images/project-pics/spotlyrics.png",
+		"image": "/images/project-pics/spotlyrics.webp",
 		"title": "Spotify Lyrics Web App",
 		"description": "A web app that syncs Spotify playback with real-time lyrics using the Spotify API. Designed for a clean, distraction-free experience.",
 		"stack": ["Next.js", "Tailwind CSS", "Spotify API"],
@@ -39,14 +39,14 @@
 		]
 	},
 	{
-		"image": "/images/project-pics/yourstech.png",
+		"image": "/images/project-pics/yourstech.webp",
 		"title": "Yourstech Academy",
 		"description": "Client project - built an eLearning platform similar to Udacity, enabling users to purchase courses. Managed database schema and backend development with contributions to the frontend, integrated Vimeo for seamless video streaming, and deployed the application to a VPS for production.",
 		"stack": ["Next.js", "Express", "MongoDB"],
 		"links": [{ "label": "Live Site", "url": "https://yourstech.academy" }]
 	},
 	{
-		"image": "/images/project-pics/academy-nest.png",
+		"image": "/images/project-pics/academy-nest.webp",
 		"title": "Academy Nest",
 		"description": "Client project - built a live eLearning platform with live virtual classrooms powered by Zoom integration. Developed scalable backend services ensuring high availability and performance, designed RESTful APIs for data exchange, and integrated live video streaming for teachers to educate students.",
 		"stack": ["Next.js", "Express.js", "Socket.io", "Prisma"],
