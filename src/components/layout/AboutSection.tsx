@@ -12,7 +12,7 @@ export const AboutSection = () => {
 					<p>
 						I am a web developer pursuing my degree in Software Engineering at Adama Science and
 						Technology University. I specialize in full-stack development with modern
-						JavaScript/TypeScript ecosystems — from crafting pixel-perfect UIs with React to
+						JavaScript/TypeScript ecosystems, from crafting pixel-perfect UIs with React to
 						designing robust APIs with Node.js. I enjoy solving real-world problems through
 						technology and contributing to open-source projects.
 					</p>
