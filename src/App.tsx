@@ -5,6 +5,9 @@ import { AboutSection } from "./components/layout/AboutSection";
 import { HeroSection } from "./components/layout/HeroSection";
 import { Nav } from "./components/layout/Nav";
 
+const SkillsSection = lazy(() =>
+	import("./components/layout/SkillsSection").then((m) => ({ default: m.SkillsSection })),
+);
 const ContactSection = lazy(() =>
 	import("./components/layout/ContactSection").then((m) => ({ default: m.ContactSection })),
 );
@@ -25,6 +28,7 @@ function App() {
 				<HeroSection />
 				<AboutSection />
 				<Suspense fallback={null}>
+					<SkillsSection />
 					<ExperienceSection />
 					<ProjectsSection />
 					<ContactSection />

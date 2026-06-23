@@ -29,6 +29,44 @@
 	@apply flex flex-col gap-0;
 }
 
+/* === SKILLS === */
+.skills-section {
+	@apply flex flex-col gap-4;
+}
+
+.skills-legend {
+	@apply flex gap-4 sm:gap-6 items-center flex-wrap border border-frame/35 p-2;
+}
+
+.skills-legend-item {
+	@apply flex items-center gap-1.5;
+}
+
+.skills-legend-label {
+	@apply text-xs sm:text-sm;
+}
+
+.skills-category-grid {
+	@apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3;
+}
+
+.skill-category-card {
+	@apply border border-frame p-3 flex flex-col gap-2 bg-main-background/50;
+	/* transition: box-shadow 0.3s ease; */
+}
+
+/* .skill-category-card:hover { */
+/* 	box-shadow: var(--frame-shadow); */
+/* } */
+/**/
+.skill-category-label {
+	@apply text-xs font-bold uppercase tracking-wider;
+}
+
+.skills-pills-exploring {
+	@apply pt-2 border-t border-frame/20;
+}
+
 /* === ABOUT === */
 .about-section {
 	@apply flex flex-col gap-3 pt-1;

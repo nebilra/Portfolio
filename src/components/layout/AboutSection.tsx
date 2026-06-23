@@ -1,8 +1,5 @@
-import ToolCard from "../common/cards/ToolCard";
 import { FileText } from "../common/icons";
 import { Reveal } from "../Reveal";
-
-const featuredSkills = ["TypeScript", "React", "Next.js", "Node.js", "Express.js", "PostgreSQL"];
 
 export const AboutSection = () => {
 	return (
@@ -19,18 +16,6 @@ export const AboutSection = () => {
 				</div>
 			</Reveal>
 			<Reveal delay={0.15}>
-				<div className="skills-compact">
-					<h5 className="skills-label"># Skills</h5>
-					<div className="skills-pills">
-						{featuredSkills.map((skill, i) => (
-							<Reveal key={skill} delay={i * 0.08}>
-								<ToolCard title={skill} size="sm" />
-							</Reveal>
-						))}
-					</div>
-				</div>
-			</Reveal>
-			<Reveal delay={0.25}>
 				<a
 					href="https://github.com/nebilra/resume/releases/latest/download/resume.pdf"
 					download

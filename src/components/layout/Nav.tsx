@@ -2,14 +2,6 @@ import { ThemeToggle } from "../common/buttons/ThemeToggle";
 import { FileText, Github, Linkedin, Send } from "../common/icons.ts";
 import "./styles/nav.css";
 
-// const links = [
-// 	{ label: "About", href: "#about" },
-// 	{ label: "Skills", href: "#skills" },
-// 	{ label: "Experience", href: "#experience" },
-// 	{ label: "Projects", href: "#projects" },
-// 	{ label: "Contact", href: "#contact" },
-// ];
-
 export const Nav = () => {
 	return (
 		<div className="nav-wrapper">

@@ -2,7 +2,7 @@
 	{
 		"position": "Full Stack Developer",
 		"company": "ProspexAI, Inc.",
-		"location": "Remote",
+		"location": "Remote | Part-Time",
 		"from": 1740787200000,
 		"to": 1777593600000,
 		"description": "Contributed to multiple real-world full stack projects. Managed database schema and backend development. Implemented UI/UX designs into a user-friendly, accessible and responsive pages. Handled deployment of applications into production.",
@@ -11,7 +11,7 @@
 	{
 		"position": "Full Stack Developer",
 		"company": "Yourstech Academy",
-		"location": "Remote",
+		"location": "Remote | Contract",
 		"from": 1748736000000,
 		"to": 1764547200000,
 		"description": "Built an eLearning platform similar to Udacity, enabling users to purchase courses. Managed database schema and backend development, with contributions to the frontend. Integrated Vimeo for seamless video streaming. Deployed the application to a VPS for production.",
@@ -20,7 +20,7 @@
 	{
 		"position": "Backend Developer",
 		"company": "Ecybernest",
-		"location": "Remote",
+		"location": "Remote | Contract",
 		"from": 1730419200000,
 		"to": 1740787200000,
 		"description": "Built scalable backend services for Academy Nest, ensuring high availability and performance. Designed and implemented RESTful APIs to facilitate data exchange between clients and servers. Integrated live video streaming for teachers to educate students.",
@@ -35,7 +35,7 @@
 	{
 		"position": "Full Stack Developer (Intern) - Network Engineering Department",
 		"company": "Information Network Security Agency",
-		"location": "Wollo Sefer, Addis Ababa",
+		"location": "Wollo Sefer, Addis Ababa | Full-Time",
 		"from": 1748736000000,
 		"to": 1756684800000,
 		"description": "Built a web-based dashboard for real-time visualization of network topology. Utilized and integrated Opendaylight's open-source L2Switch module with the latest version",
@@ -44,9 +44,9 @@
 	{
 		"position": "Full Stack Developer (Intern)",
 		"company": "EagleLion System Technology",
-		"location": "Remote",
-		"from": 1643673600000,
-		"to": 1701388800000,
+		"location": "Remote | Part-Time",
+		"from": 1717200000000,
+		"to": 1725148800000,
 		"description": "Implemented role-based web app for hospital management for doctors, patients, receptionists, and admins",
 		"stack": ["Next.js", "Prisma", "Testing"]
 	}
