@@ -14,20 +14,24 @@ export const SkillsSection = () => {
 
 	return (
 		<section id="skills" className="skills-section section">
-			<Reveal className="flex justify-between items-center">
-				<SectionHeader>Skills</SectionHeader>
-				<Reveal delay={0.12}>
-					<div className="skills-legend">
-						<span className="skills-legend-item">
-							<ToolCard title="" size="md" />
-							<span className="skills-legend-label">Proficient</span>
-						</span>
-						<span className="skills-legend-item">
-							<ToolCard title="" bg="alt" size="md" />
-							<span className="skills-legend-label">Familiar</span>
-						</span>
+			<Reveal>
+				<SectionHeader>
+					<div className="flex justify-between items-center">
+						<h2>Skills</h2>
+						<Reveal delay={0.12}>
+							<div className="skills-legend">
+								<span className="skills-legend-item">
+									<ToolCard title="" size="md" />
+									<span className="skills-legend-label">Proficient</span>
+								</span>
+								<span className="skills-legend-item">
+									<ToolCard title="" bg="alt" size="md" />
+									<span className="skills-legend-label">Familiar</span>
+								</span>
+							</div>
+						</Reveal>
 					</div>
-				</Reveal>
+				</SectionHeader>
 			</Reveal>
 			<div className="skills-category-grid">
 				{allCategories.map((category, i) => {
