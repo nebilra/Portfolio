@@ -30,7 +30,9 @@ export const AboutSection = () => {
 						download
 						className="btn inline-flex gap-2 items-center justify-center"
 					>
-						<FileText className="w-4 h-4" /> <span>Download Resume</span>
+						<FileText className="w-4 h-4" />{" "}
+						<span className="hidden sm:block">Download Resume</span>
+						<span className="block sm:hidden">My Resume</span>
 					</a>
 				</Reveal>
 				<Reveal delay={0.15}>

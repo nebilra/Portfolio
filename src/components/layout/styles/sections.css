@@ -105,7 +105,7 @@
 
 /* === EXPERIENCE === */
 .experience-section {
-	@apply max-h-max h-max mb-8 flex flex-col gap-4;
+	@apply max-h-max h-max mb-8 flex flex-col gap-2 sm:gap-4;
 }
 
 .experience-panel-content {
