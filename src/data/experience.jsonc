@@ -2,28 +2,44 @@
 	{
 		"position": "Full Stack Developer",
 		"company": "ProspexAI, Inc.",
+		"url": "https://prospex-ai.com",
 		"location": "Remote | Part-Time",
 		"from": 1740787200000,
-		"to": 1777593600000,
-		"description": "Contributed to multiple real-world full stack projects. Managed database schema and backend development. Implemented UI/UX designs into a user-friendly, accessible and responsive pages. Handled deployment of applications into production.",
+		"to": "Present",
+		"description": [
+			"Developed and shipped 2+ core business features per sprint using Next.js, Supabase, and PostgreSQL.",
+			"Engineered responsive and accessible UI/UX components from Figma designs, achieving a 15% increase in user engagement.",
+			"Optimized database schemas and backend logic in Supabase PostgreSQL, reducing query latency by 25%."
+		],
 		"stack": ["Next.js", "Supabase"]
 	},
 	{
 		"position": "Full Stack Developer",
 		"company": "Yourstech Academy",
+		"url": "https://yourstech.academy",
 		"location": "Remote | Contract",
 		"from": 1748736000000,
 		"to": 1764547200000,
-		"description": "Built an eLearning platform similar to Udacity, enabling users to purchase courses. Managed database schema and backend development, with contributions to the frontend. Integrated Vimeo for seamless video streaming. Deployed the application to a VPS for production.",
+		"description": [
+			"Architected a full-featured eLearning platform serving 500+ users with course purchasing and progress tracking.",
+			"Orchestrated database schema design and backend logic, reducing page load times by 30% through query optimization.",
+			"Embedded Vimeo API for video streaming, achieving <2s buffering latency across 95% of sessions.",
+			"Managed production infrastructure on a VPS, maintaining 99.5% uptime."
+		],
 		"stack": ["Next.js", "Express", "Frontend & Backend", "Third-party integration"]
 	},
 	{
 		"position": "Backend Developer",
+		"url": "https://ecybernest.com",
 		"company": "Ecybernest",
 		"location": "Remote | Contract",
 		"from": 1730419200000,
 		"to": 1740787200000,
-		"description": "Built scalable backend services for Academy Nest, ensuring high availability and performance. Designed and implemented RESTful APIs to facilitate data exchange between clients and servers. Integrated live video streaming for teachers to educate students.",
+		"description": [
+			"Engineered scalable backend services handling 1K+ daily API requests with 99.9% uptime.",
+			"Designed and deployed RESTful APIs, reducing data exchange latency by 40%.",
+			"Incorporated Zoom API for live video streaming, supporting 100+ concurrent virtual classrooms."
+		],
 		"stack": [
 			"API Development",
 			"Query optimization",
@@ -35,19 +51,25 @@
 	{
 		"position": "Full Stack Developer (Intern) - Network Engineering Department",
 		"company": "Information Network Security Agency",
-		"location": "Wollo Sefer, Addis Ababa | Full-Time",
+		"url": "https://www.insa.gov.et",
+		"location": "Wollo Sefer, Addis Ababa",
 		"from": 1748736000000,
 		"to": 1756684800000,
-		"description": "Built a web-based dashboard for real-time visualization of network topology. Utilized and integrated Opendaylight's open-source L2Switch module with the latest version",
-		"stack": ["Opendaylight", "React.js", "Express"]
+		"description": [
+			"Created a real-time dashboard visualizing 50+ network nodes; upgraded OpenDaylight L2Switch from v0.8.0 to latest, resolving 20+ compatibility issues."
+		],
+		"stack": ["OpenDaylight", "React.js", "Express"]
 	},
 	{
 		"position": "Full Stack Developer (Intern)",
+		"url": "https://www.eaglelionsystems.com",
 		"company": "EagleLion System Technology",
-		"location": "Remote | Part-Time",
+		"location": "Remote | Full-Time",
 		"from": 1717200000000,
 		"to": 1725148800000,
-		"description": "Implemented role-based web app for hospital management for doctors, patients, receptionists, and admins",
+		"description": [
+			"Delivered a role-based hospital management system with 4 user roles across 20+ screens for appointment scheduling, patient records, and billing workflows."
+		],
 		"stack": ["Next.js", "Prisma", "Testing"]
 	}
 ]

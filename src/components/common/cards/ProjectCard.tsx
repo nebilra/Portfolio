@@ -15,15 +15,18 @@ const isGitHub = (label: string) => label.toLowerCase() === "github";
 
 const ProjectCard = ({ title, description, links, stack, image }: props) => {
 	return (
-		<div className="p-4 flex flex-col gap-2 break-inside-avoid-column border border-frame/10 mb-4 bg-card/50 backdrop-blur-sm project-card hover:-translate-y-2">
+		<div className="p-4 flex flex-col gap-2 break-inside-avoid-column border border-frame/10 mb-4 bg-card/50 backdrop-blur-sm project-card hover:-translate-y-2 group">
 			{image && (
-				<img
-					src={image}
-					alt={`${title}'s thumbnail`}
-					loading="lazy"
-					decoding="async"
-					className="transition-transform duration-300 hover:scale-105"
-				/>
+				<div className="relative">
+					<img
+						src={image}
+						alt={`${title}'s thumbnail`}
+						loading="lazy"
+						decoding="async"
+						className="transition-transform duration-300 group-hover:scale-105 w-full"
+					/>
+					<div className="absolute inset-0 bg-background/10 group-hover:opacity-0 transition-opacity duration-300 pointer-events-none" />
+				</div>
 			)}
 			<h4 className="text-wrap">{title}</h4>
 			<div className="flex gap-2 flex-wrap mb-2">
@@ -48,7 +51,7 @@ const ProjectCard = ({ title, description, links, stack, image }: props) => {
 							}`}
 						>
 							{github ? <Github className="w-4 h-4" /> : <ExternalLink className="w-4 h-4" />}
-							<span>{link.label}</span>
+							{/* <span>{link.label}</span> */}
 						</a>
 					);
 				})}

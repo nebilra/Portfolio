@@ -32,7 +32,7 @@ export const HeroSection = () => {
 						</span>
 					</h1>
 					<h5 className="hero-fade-in" style={{ animationDelay: "0.5s" }}>
-						I build things for the web
+						Full Stack Developer
 					</h5>
 				</div>
 			</div>

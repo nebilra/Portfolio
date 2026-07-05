@@ -38,4 +38,27 @@
 
 .btn {
 	@apply border border-frame px-3 py-1.5 bg-frame text-frame-foreground disabled:bg-gray-600 cursor-pointer;
+	transition: transform 0.2s ease;
+}
+
+.btn:hover:not(:disabled) {
+	transform: scale(1.04);
+}
+
+.btn:active:not(:disabled) {
+	transform: scale(0.97);
+}
+
+.btn-secondary {
+	@apply border border-frame/60 px-3 py-1.5 bg-transparent text-muted-foreground disabled:bg-gray-600 cursor-pointer;
+	transition: transform 0.2s ease;
+}
+
+.btn-secondary:hover:not(:disabled) {
+	@apply bg-frame/10;
+	transform: scale(1.04);
+}
+
+.btn-secondary:active:not(:disabled) {
+	transform: scale(0.97);
 }
