@@ -1,8 +1,8 @@
 {
-	"Languages": ["Html", "CSS", "Javascript", "Typescript"],
-	"Frontend": ["React.js", "Next.js", "Tailwind"],
-	"Backend": ["Node.js", "Express.js"],
+	"Languages": ["Html", "CSS", "Javascript", "Typescript", "Dart"],
+	"Frontend": ["React.js", "Next.js", "Tailwind", "Flutter"],
+	"Backend": ["Node.js", "Express.js", "Supabase"],
 	"Database/ORM": ["PostgreSQL", "MongoDB", "Prisma"],
 	"Tools": ["Git & Github", "Figma", "Postman", "Linux"],
-	"DevOps": ["Github Actions", "Docker"]
+	"DevOps": ["Github Actions", "Docker", "AWS"]
 }

@@ -6,6 +6,10 @@ import { Reveal } from "../Reveal";
 
 type SkillsData = Record<string, string[]>;
 
+const categoryLabels: Record<string, string> = {
+	DevOps: "DevOps & Cloud",
+};
+
 export const SkillsSection = () => {
 	const core = coreSkills as SkillsData;
 	const other = otherSkills as SkillsData;
@@ -41,7 +45,7 @@ export const SkillsSection = () => {
 					return (
 						<Reveal key={category} delay={0.2 + i * 0.05}>
 							<div className="skill-category-card">
-								<h4 className="skill-category-label">{category}</h4>
+								<h4 className="skill-category-label">{categoryLabels[category] ?? category}</h4>
 								{coreList.length > 0 && (
 									<div className="skills-pills">
 										{coreList.map((skill) => (

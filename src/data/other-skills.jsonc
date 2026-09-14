@@ -1,6 +1,6 @@
 {
-	"Languages": ["Python", "Java", "Dart", "Go", "Bash", "Lua", "SQL"],
-	"Frontend": ["React-Native", "Flutter", "Svelte.js", "Remix", "Redux"],
+	"Languages": ["Python", "Java", "Go", "Bash", "Lua", "SQL"],
+	"Frontend": ["React-Native", "Svelte.js", "Remix", "Redux"],
 	"Backend": ["Spring Boot", "Hono.js", "Nest.js", "Django"],
 	"Database/ORM": ["MySql", "SQlite", "Drizzle"]
 }
